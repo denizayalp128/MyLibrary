@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="top">
+    <h1>Library</h1>
+    <div class="actions">
+      <button class="btn btn-primary">+ Add book</button>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search books..." />
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Publisher</th>
+        <th>Pages</th>
+      </tr>
+    </thead>
+    <tbody id="book-list">
+      <tr class="empty-row">
+        <td colspan="4" class="empty">No books yet. Add one to get started.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
