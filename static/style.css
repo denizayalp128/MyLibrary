@@ -1,0 +1,118 @@
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #111;
+      color: #e8e3d8;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 { font-size: 1.2rem; font-weight: 500; }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      background: none;
+      border: 0.5px solid #444;
+      color: #e8e3d8;
+      padding: 7px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: #1e1e1e; }
+
+    .btn-primary {
+      margin-top: 5px;
+      background: #222;
+      border-color: #555;
+    }
+
+    .search-bar {
+      display: flex;
+      margin-bottom: 1.5rem;
+    }
+
+    .search-bar input {
+      width: 100%;
+      background: #1a1a1a;
+      border: 0.5px solid #333;
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: #e8e3d8;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-bar input::placeholder { color: #555; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead th {
+      text-align: left;
+      padding: 8px 12px;
+      color: #666;
+      font-weight: 400;
+      font-size: 12px;
+      border-bottom: 0.5px solid #2a2a2a;
+    }
+
+    tbody tr {
+      border-bottom: 0.5px solid #1e1e1e;
+    }
+
+    tbody tr:hover { background: #161616; }
+
+    tbody td {
+      padding: 10px 12px;
+      color: #ccc;
+    }
+
+    tbody td:first-child { color: #e8e3d8; }
+
+    .empty {
+      text-align: center;
+      color: #444;
+      padding: 4rem 0;
+      font-size: 14px;
+    }
+
+    textarea#pages, textarea#publisher, textarea#author, textarea#title {
+      width: 200px;
+      background: #1a1a1a;
+      border: 0.5px solid #333;
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: #e8e3d8;
+      font-size: 14px;
+      outline: none;
+      margin-right: 100px
+    }
+
+    select {
+      width: 125px;
+      height: 35px;
+      background: #1a1a1a;
+      border: 0.5px solid #333;
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: #e8e3d8;
+      font-size: 14px;
+      outline: none;
+    }
