@@ -1,4 +1,4 @@
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: system-ui, sans-serif;
@@ -116,3 +116,15 @@
       font-size: 14px;
       outline: none;
     }
+
+    .status-badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .status-read { background: #2e7d32; color: #fff; }
+    .status-reading { background: #f9a825; color: #000; }
+    .status-waiting { background: #c62828; color: #fff; }
