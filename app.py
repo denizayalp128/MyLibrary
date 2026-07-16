@@ -125,5 +125,23 @@ def edit_book_post(book_id):
     return redirect(url_for("index"))
 
 
+@app.route("/delete/<int:book_id>", methods=["GET", "POST"])
+def delete_book_post(book_id):
+
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    cursor.execute(
+        "DELETE FROM books WHERE id = ?",
+        (book_id,)
+    )
+
+    connection.commit()
+    connection.close()
+
+    return redirect(url_for("index"))
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
