@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <div class="search-bar">
+  <div class="search-bar" id="search-bar">
     <input type="text" id="search" placeholder="Search books..." />
   </div>
 
@@ -50,5 +50,6 @@
       {% endif %}
     </tbody>
   </table>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

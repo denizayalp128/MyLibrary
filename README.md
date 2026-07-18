@@ -1,6 +1,6 @@
 # MyLibrary
 
-![Version](https://img.shields.io/badge/version-0.5.1-blue)
+![Version](https://img.shields.io/badge/version-0.6-blue)
 ![Status](https://img.shields.io/badge/status-in%20development-yellow)
 ![Python](https://img.shields.io/badge/python-3.x-blue)
 ![Flask](https://img.shields.io/badge/flask-2.x-green)
@@ -9,79 +9,105 @@
 
 ## Overview
 
-MyLibrary is a web application built with Python and Flask that helps users organize their personal book collections.
+MyLibrary is a web application built with Python, Flask, SQLite, HTML, CSS, and JavaScript that helps users organize their personal book collections.
 
-The project is being developed as a long-term learning project focused on web development, databases, and software engineering. Future versions will introduce additional features, including artificial intelligence, as the project grows.
+The project is being developed as a long-term software engineering project. It began as a simple CRUD application and will gradually evolve into a much larger learning platform called **StudyHub**, introducing authentication, artificial intelligence, recommendation systems, and additional study tools.
 
-Its primary goal is to provide a simple and intuitive way to organize books while serving as a practical way to learn how real database-driven web applications are built.
-
----
-
-## Current Version
-
-**Version 0.5.1 – Complete CRUD Functionality**
-
-**Current Status:** ✅ Completed
+The goal of MyLibrary is not only to organize books but also to serve as a practical way to learn how professional database-driven web applications are designed and built.
 
 ---
 
-## Features
+# Current Version
 
-### User Interface
+## Version 0.6 – Complete Library Management
 
-* Modern dark-themed interface
-* Homepage with book listings
-* Add Book page with form
-* Edit Book page with pre-filled data
-* Responsive layout
+**Status:** ✅ Completed
+
+This version marks the completion of the application's core library management functionality.
+
+---
+
+# Features
+
+## User Interface
+
+* Dark-themed responsive interface
+* Homepage displaying all books
+* Add Book page
+* Edit Book page
 * Navigation between pages
-* Color-coded status badges
-
-### Book Management
-
-* Add new books with all details
-* Store book title, author, publisher, and page count
-* Track reading status (read, reading, waiting)
-* Edit existing books with pre-filled forms
-* Update all book fields including status
-* Delete books from the library
-* Display all saved books on the homepage
-* Full CRUD functionality (Create, Read, Update, Delete)
-* Color-coded status indicators:
-
-  * 🟢 **Read** – Green badge
-  * 🟡 **Reading** – Yellow badge
-  * 🔴 **Waiting** – Red badge
-
-### Database
-
-* SQLite database integration
-* Books table with proper schema
-* Status column with default `waiting`
-* Automatic ID generation
-* Persistent storage
-* Read data from SQLite
-* Insert new books into the database
-* Update existing book records
-* Delete book records
-* Dynamic homepage generated from database contents
+* Color-coded reading status
+* Live JavaScript search bar
 
 ---
 
-## Technologies Used
+## Library Management
 
-### Backend
+### Create
 
-* Python 3.x
-* Flask 2.x
-* SQLite 3
+* Add books
+* Store title
+* Store author
+* Store publisher
+* Store page count
+* Store reading status
 
-### Frontend
+### Read
+
+* Display all books
+* Dynamic homepage generated from SQLite
+
+### Update
+
+* Edit existing books
+* Update every field
+* Modify reading status
+
+### Delete
+
+* Remove books from the database
+
+---
+
+## Search
+
+Live search using JavaScript.
+
+Search by:
+
+* Title
+* Author
+* Publisher
+* Pages
+* Reading Status
+
+---
+
+## Database
+
+* SQLite integration
+* Persistent storage
+* Automatic ID generation
+* CRUD operations
+* Dynamic rendering using Flask
+
+---
+
+# Technologies
+
+## Backend
+
+* Python
+* Flask
+* SQLite
+
+## Frontend
 
 * HTML5
 * CSS3
+* JavaScript
 
-### Tools & Version Control
+## Development Tools
 
 * Visual Studio Code
 * Git
@@ -90,123 +116,115 @@ Its primary goal is to provide a simple and intuitive way to organize books whil
 
 ---
 
-## Project Structure
+# Current Skills Demonstrated
 
-```text
-MyLibrary/
-├── app.py                      # Flask application
-├── library.db                  # SQLite database
-├── README.md                   # Project documentation
-├── .gitignore                  # Git ignore file
-├── templates/
-│   ├── index.html              # Homepage with book list
-│   ├── add_book.html           # Add book form
-│   └── edit_book.html          # Edit book form
-└── static/
-    └── style.css               # Dark theme styling
-```
-
----
-
-## Development Progress
-
-### Version 0.1 – Foundation ✅
-
-* Flask project setup
-* Basic user interface
+* Flask routing
 * HTML templates
 * CSS styling
-* Routing
-* Static files
+* JavaScript DOM manipulation
+* CRUD applications
+* SQLite database management
+* SQL queries
+* Dynamic web pages
+* Form handling
+* URL routing
+* Database updates
+* Database deletion
+* Client-side search
+* Version control with Git
 
-### Version 0.2 – User Input ✅
+---
 
-* Book input forms
-* Form handling with Flask
-* POST requests
-* Data collection
+# Development Timeline
 
-### Version 0.3 – User Interface Improvements ✅
+## Version 0.1
 
-* Improved navigation
+* Flask setup
+* Basic website
+* HTML
+* CSS
+
+## Version 0.2
+
+* Forms
+* User input
+* Flask POST requests
+
+## Version 0.3
+
+* Interface improvements
+* Better navigation
 * Responsive layout
-* Better styling
-* Enhanced user experience
 
-### Version 0.4 – SQLite Database Integration ✅
+## Version 0.4
 
-* SQLite database created
-* Books table implemented
-* Database connection established
-* Store submitted books
-* Display books from the database
+* SQLite integration
+* Store books
+* Display books
 
-### Version 0.5 – Library Management ✅
+## Version 0.5
 
 * Edit books
-* Update book information
-* Reading status support
-* Dynamic book listing
-* Color-coded status badges
+* Reading status
+* Dynamic homepage
 
-### Version 0.5.1 – Complete CRUD ✅
+## Version 0.6
 
 * Delete books
-* Full Create, Read, Update, Delete functionality
+* Complete CRUD
+* JavaScript live search
+* Full library management system
 
 ---
 
-## Planned Features
+# Next Version
 
-### Version 0.6
+## Version 0.7
 
-* Search books
-* Filter books by status
-* Sort books by title, author, or reading status
-
-### Version 0.7
+Planned features:
 
 * User accounts
-* Login and registration
+* Registration
+* Login / Logout
+* Password hashing
+* User sessions
 * Personal libraries
-
-### Version 0.8
-
-* AI-powered book recommendations
-* Local AI integration
-* Intelligent search
-
-### Future Goals
-
-* StudyHub transformation
-* Reading statistics
-* Personalized recommendations
-* Reading goals
-* Cloud synchronization
-* Custom machine learning features
 
 ---
 
-## Learning Objectives
+# Future Roadmap
+
+Future versions will gradually transform MyLibrary into **StudyHub** by adding:
+
+* AI-powered book recommendations
+* Local language model integration
+* Reading analytics
+* Personalized learning tools
+* Machine learning components
+* Custom recommendation engine
+
+---
+
+# Learning Objectives
 
 This project is helping me learn:
 
-* Python programming
-* Flask development
-* SQL and SQLite
-* CRUD application development
-* Backend and frontend communication
-* Database design
-* Software engineering practices
-* Git and version control
-* Preparing for future AI integration
+* Python
+* Flask
+* SQL
+* SQLite
+* JavaScript
+* Database-driven web development
+* Software engineering
+* Git
+* Full-stack development
 
 ---
 
-## Author
+# Author
 
 **Deniz Ayalp**
 
 Created in 2026.
 
-**Current Status:** In Development 🚀
+**Current Status:** In Development 
